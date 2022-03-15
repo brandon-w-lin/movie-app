@@ -3,18 +3,42 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  ##############
+  ### Movies ###
+  ##############
+
+  #index
+  get "/movies" => "movies#index"
+
+  #show
+  get "/movies/:id" => "movies#show"
+
+  #create
+  post "/movies" => "movies#create"
+
+  #update
+  patch "/movies/:id" => "movies#update"
+
+  #destroy
+  delete "/movies/:id" => "movies#destroy"
+
+  ##############
+  ### Actors ###
+  ##############
+
+  #index
   get "/actors" => "actors#index"
 
-  # segment parameter
+  #show
   get "/actors/:id" => "actors#show"
 
-  # query parameter
-  get "/actor_lookup" => "actors#show"
+  #create
+  post "/actors" => "actors#create"
 
-  # body param
-  post "actor_lookup" => "actors#show"
+  #update
+  patch "/actors/:id" => "actors#update"
 
-  get "/movies" => "movies#index"
-  get "/movies/top" => "movies#show_top"
-  get "/movies/:id" => "movies#show"
+  #destroy
+  delete "/actors/:id" => "actors#destroy"
 end
