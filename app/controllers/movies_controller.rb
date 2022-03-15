@@ -17,13 +17,20 @@ class MoviesController < ApplicationController
   end
 
   def update
-    movie = Movie.find_by(id: params[:id]).as_json
+    movie_id = params[:id]
+    movie = Movie.find_by(id: movie_id)
 
     movie.title = params[:title] || movie.title
     movie.year = params[:year] || movie.year
     movie.plot = params[:plot] || movie.plot
+
+    movie.save
   end
 
   def destroy
+    movie_id = params[:id]
+    movie = Movie.find_by(id: movie_id)
+
+    movie.destroy
   end
 end

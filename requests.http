@@ -1,6 +1,8 @@
+### INDEX
+GET http://localhost:3000/movies
 
-
-
+### SHOW
+GET http://localhost:3000/movies/1
 
 ### CREATE
 POST http://localhost:3000/movies
@@ -11,3 +13,46 @@ Content-Type: application/json
   "year": "2002",
   "plot":"The story of a man (Matt Damon), salvaged, near death, from the ocean by an Italian fishing boat. When he recuperates, the man suffers from total amnesia, without identity or background... except for a range of extraordinary talents in fighting, linguistic skills and self-defense that speak of a dangerous past. He sets out on a desperate search-assisted by the initially rebellious Marie (Franka Potente) - to discover who he really is, and why he's being lethally pursued by assassins."
 }
+
+### UPDATE
+PATCH http://localhost:3000/movies/4
+Content-Type: application/json
+
+{
+  "year": "2002"
+}
+
+### DELETE
+DELETE http://localhost:3000/movies/4
+
+
+##############
+### ACTORS ###
+##############
+
+### INDEX
+GET http://localhost:3000/actors
+
+### SHOW
+GET http://localhost:3000/actors/1
+
+### CREATE
+POST http://localhost:3000/actors
+Content-Type: application/json
+
+{
+  "first_name":"Leonardo",
+  "last_name": "Dicaprio",
+  "known_for":"The Titanic"
+}
+
+### UPDATE
+PATCH http://localhost:3000/actors/7
+Content-Type: application/json
+
+{
+  "known_for": "Inception"
+}
+
+### DELETE
+DELETE http://localhost:3000/actors/6
