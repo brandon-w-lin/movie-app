@@ -1,10 +1,12 @@
 class MoviesController < ApplicationController
   def index
-    render json: Movie.all.as_json
+    @movies = Movie.all
+    render :index
   end
 
   def show
-    render json: Movie.find_by(id: params[:id]).as_json
+    @movie = Movie.find_by(id: params[:id])
+    render :show
   end
 
   def create
