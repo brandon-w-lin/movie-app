@@ -31,10 +31,10 @@ DELETE http://localhost:3000/movies/4
 ##############
 
 ### INDEX
-GET http://localhost:3000/actors
+GET http://localhost:3000/actors.json
 
 ### SHOW
-GET http://localhost:3000/actors/1
+GET http://localhost:3000/actors/5.json
 
 ### CREATE
 POST http://localhost:3000/actors
