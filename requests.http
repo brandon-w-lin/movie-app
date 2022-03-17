@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### UPDATE
-PATCH http://localhost:3000/movies/4
+PATCH http://localhost:3000/movies/1
 Content-Type: application/json
 
 {
-  "year": "2002"
+  "english": "true"
 }
 
 ### DELETE
