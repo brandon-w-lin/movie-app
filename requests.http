@@ -42,12 +42,12 @@ Content-Type: application/json
 
 {
   "first_name":"Leonardo",
-  "last_name": "Dicaprio",
+  "last_name": "Dicaprioooo",
   "known_for":"The Titanic"
 }
 
 ### UPDATE
-PATCH http://localhost:3000/actors/7
+PATCH http://localhost:3000/actors/7.json
 Content-Type: application/json
 
 {

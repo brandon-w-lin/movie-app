@@ -17,7 +17,11 @@ class MoviesController < ApplicationController
       director: params[:director],
       english: params[:english],
     )
-    movie.save
+    if movie.save
+      render json: movie.as_json
+    else
+      render json: { errors: movie.errors.full_messages }, status: 422
+    end
   end
 
   def update
