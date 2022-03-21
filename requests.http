@@ -41,18 +41,21 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name":"Leonardo",
-  "last_name": "Dicaprioooo",
-  "known_for":"The Titanic"
+  "first_name":"Matt",
+  "last_name": "Damon",
+  "known_for":"The Bourne Identity",
+  "age": 51,
+  "gender": "m", 
+  "movie_id": 5
 }
 
 ### UPDATE
-PATCH http://localhost:3000/actors/7.json
+PATCH http://localhost:3000/actors/3.json
 Content-Type: application/json
 
 {
-  "known_for": "Inception"
+  "movie_id": 2
 }
 
 ### DELETE
-DELETE http://localhost:3000/actors/17.json
+DELETE http://localhost:3000/actors/18.json
