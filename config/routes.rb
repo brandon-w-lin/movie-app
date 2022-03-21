@@ -41,4 +41,5 @@ Rails.application.routes.draw do
 
   #destroy
   delete "/actors/:id" => "actors#destroy"
+
 end

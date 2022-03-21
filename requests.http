@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ### DELETE
-DELETE http://localhost:3000/movies/4
+DELETE http://localhost:3000/movies/6
 
 
 ##############
@@ -55,4 +55,4 @@ Content-Type: application/json
 }
 
 ### DELETE
-DELETE http://localhost:3000/actors/6
+DELETE http://localhost:3000/actors/17.json

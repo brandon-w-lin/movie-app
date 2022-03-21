@@ -6,6 +6,7 @@
     director: movie.director,
     english: movie.english,
     plot: movie.plot
+    actors: movie.actors
   # url: movie_url(movie, format: :json)
   }
 end
