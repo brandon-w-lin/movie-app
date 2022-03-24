@@ -34,7 +34,7 @@ DELETE http://localhost:3000/movies/6
 GET http://localhost:3000/actors.json
 
 ### SHOW
-GET http://localhost:3000/actors/5.json
+GET http://localhost:3000/actors/3.json
 
 ### CREATE
 POST http://localhost:3000/actors
@@ -58,4 +58,19 @@ Content-Type: application/json
 }
 
 ### DELETE
-DELETE http://localhost:3000/actors/18.json
+DELETE http://localhost:3000/actors/8.json
+
+#############
+### USERS ###
+#############
+
+### CREATE
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
