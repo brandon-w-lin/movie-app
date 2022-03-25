@@ -18,6 +18,11 @@
 
 # Movie.create({ title: "The French Dispatch", year: 2001, plot: "A love letter to journalists set in an outpost of an American newspaper in a fictional 20th-century French city that brings to life a collection of stories published in 'The French Dispatch.'" })
 
-Genre.create(name: "Science-fiction")
-Genre.create(name: "Action")
-Genre.create(name: "Comedy")
+# Genre.create(name: "Science-fiction")
+# Genre.create(name: "Action")
+# Genre.create(name: "Comedy")
+
+MovieGenre.create(movie_id: 1, genre_id: 1)
+MovieGenre.create(movie_id: 2, genre_id: 2)
+MovieGenre.create(movie_id: 3, genre_id: 3)
+MovieGenre.create(movie_id: 5, genre_id: 2)
