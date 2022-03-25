@@ -17,3 +17,7 @@
 # Movie.create({ title: "The Dark Knight", year: 2008, plot: "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism." })
 
 # Movie.create({ title: "The French Dispatch", year: 2001, plot: "A love letter to journalists set in an outpost of an American newspaper in a fictional 20th-century French city that brings to life a collection of stories published in 'The French Dispatch.'" })
+
+Genre.create(name: "Science-fiction")
+Genre.create(name: "Action")
+Genre.create(name: "Comedy")
