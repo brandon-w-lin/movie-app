@@ -2,16 +2,16 @@
 GET http://localhost:3000/movies.json
 
 ### SHOW
-GET http://localhost:3000/movies/1.json
+GET http://localhost:3000/movies/8.json
 
 ### CREATE
 POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title":"The Bourne Identity",
-  "year": "2002",
-  "plot":"The story of a man (Matt Damon), salvaged, near death, from the ocean by an Italian fishing boat. When he recuperates, the man suffers from total amnesia, without identity or background... except for a range of extraordinary talents in fighting, linguistic skills and self-defense that speak of a dangerous past. He sets out on a desperate search-assisted by the initially rebellious Marie (Franka Potente) - to discover who he really is, and why he's being lethally pursued by assassins."
+  "title":"The Bourne Supremacy",
+  "year": "2004",
+  "plot":"Jason Bourne (Matt Damon) is living in India when he is framed by Russian agent Kirill (Karl Urban) for the theft of millions from the CIA. Kirill begins to pursue Bourne, intending to assassinate him -- but while Bourne and his girlfriend, Marie (Franka Potente), are on the run, a shot meant for him kills her instead. Vowing revenge, Bourne sets out to prove his innocence and bring the culprits to justice, but he has to evade CIA head Pamela Landry (Joan Allen), who is convinced he is guilty."
 }
 
 ### UPDATE
@@ -73,4 +73,17 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "password",
   "password_confirmation": "password"
+}
+
+###################
+### MOVIE GENRE ###
+###################
+
+### CREATE
+POST http://localhost:3000/moviegenres
+Content-Type: application/json
+
+{
+  "genre_id": 2,
+  "movie_id": 8
 }

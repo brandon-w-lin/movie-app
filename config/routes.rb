@@ -48,4 +48,23 @@ Rails.application.routes.draw do
 
   #create
   post "/users" => "users#create"
+
+  ###################
+  ### MOVIE GENRE ###
+  ###################
+
+  #index
+  get "/moviegenres" => "movie_genres#index"
+
+  #show
+  get "/moviegenres/:id" => "movie_genres#show"
+
+  #create
+  post "/moviegenres" => "movie_genres#create"
+
+  #update
+  patch "/moviegenres/:id" => "movie_genres#update"
+
+  #destroy
+  delete "/moviegenres/:id" => "movie_genres#destroy"
 end
